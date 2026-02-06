@@ -3,7 +3,7 @@ import Servicos from './components/Servicos'
 import Processo from './components/Processo'
 import Projetos from './components/Projetos'
 import Contact from './components/Contact'
-import Navbar from './components/Navbar.'; // Ajuste caso o caminho seja diferente
+import Navbar from './components/Navbar'; // Ajuste caso o caminho seja diferente
 
 
 export default function Home() {

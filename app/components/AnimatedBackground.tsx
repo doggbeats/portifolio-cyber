@@ -57,10 +57,11 @@ export default function FundoAnimado() {
             direction: "none",
             outModes: { default: "out" },
           },
-          number: {
-            density: { enable: true, area: 800 },
-            value: 100, // Quantidade de pontos
+            number: {
+            density: { enable: true }, // remove 'area' ou 'value_area'
+            value: 100,
           },
+
           opacity: {
             value: 0.3,
           },
