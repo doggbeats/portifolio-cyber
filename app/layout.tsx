@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body className={`${orbitron.className} bg-[#0a0a0a] text-[#00ff7f]`}>
+    <html lang="pt-br" className="h-full">
+  <body className={`${orbitron.className} h-full bg-[#0a0a0a] text-[#00ff7f]`}>
         <AnimatedBackground /> 
         {children}
       </body>
