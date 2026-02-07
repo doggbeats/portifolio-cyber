@@ -15,7 +15,7 @@ const Hero = () => {
     <div className="space-y-8">
       <h1 className="text-4xl md:text-8xl font-bold leading-[1.05] tracking-tight hover:text-[#a5c9ff]">
         Paulo <br />
-        <span className="text-[#a5c9ff] hover:text-white">Henrique</span>
+        <span className="text-white">Henrique</span>
       </h1>
 
       <p className="text-gray-400 text-xl max-w-md leading-relaxed transition-colors hover:text-white">
