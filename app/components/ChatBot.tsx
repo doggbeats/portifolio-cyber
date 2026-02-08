@@ -39,12 +39,9 @@ export default function ChatBot() {
           </p>
 
           <div className="flex flex-col gap-2">
-            <button onClick={() => goTo("me")} className="bg-green-500 p-2 rounded">
-              😎 Sobre mim
-            </button>
-
+            
             <button onClick={() => goTo("servicos")} className="bg-green-500 p-2 rounded">
-              🛠️ Serviços
+              😎 Me
             </button>
 
             <button onClick={() => goTo("processo")} className="bg-green-500 p-2 rounded">
