@@ -17,6 +17,7 @@ export default function RootLayout({
   <body className={`${orbitron.className} h-full bg-[#0a0a0a] text-[#00ff7f]`}>
         <AnimatedBackground /> 
         {children}
+        <ChatBot />
       </body>
     </html>
   )
