@@ -1,9 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ChatBot() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 800);
+  }, []);
 
   function goTo(id: string) {
     const element = document.getElementById(id);
@@ -27,18 +33,22 @@ export default function ChatBot() {
           <p className="mb-3 font-bold">
             👋 Olá! Eu sou o assistente do Paulo.
           </p>
+
           <p className="mb-4 text-sm">
             O que você deseja conhecer?
           </p>
 
           <div className="flex flex-col gap-2">
+            <button onClick={() => goTo("me")} className="bg-green-500 p-2 rounded">
+              😎 Sobre mim
+            </button>
 
             <button onClick={() => goTo("servicos")} className="bg-green-500 p-2 rounded">
-              😎 Me
+              🛠️ Serviços
             </button>
 
             <button onClick={() => goTo("processo")} className="bg-green-500 p-2 rounded">
-              📊 Habilidade
+              📊 Habilidades
             </button>
 
             <button onClick={() => goTo("projetos")} className="bg-green-500 p-2 rounded">
