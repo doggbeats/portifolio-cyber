@@ -33,7 +33,7 @@ const Navbar = () => {
 
       {/* Botão Currículo Desktop */}
       <a
-        href="/curriculo_2026.pdf"
+        href="/REMOTO26.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="hidden md:block"
