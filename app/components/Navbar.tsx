@@ -69,7 +69,7 @@ const Navbar = () => {
         ))}
 
         <a
-          href="/curriculo_2026.pdf"
+          href="/REMOTO26.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
