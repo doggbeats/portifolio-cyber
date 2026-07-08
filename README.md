@@ -1,6 +1,6 @@
 🚀 Publiquei meu portfólio profissional desenvolvido com Next.js, Tailwind CSS e apoio de IA Generativa
 
-🔗 https://portifolio-cyber.vercel.app/
+🔗 (https://doggbeats-portifolio-cyber.vercel.app/)
 
 Do meu primeiro portfólio em HTML5, CSS3 e JavaScript… ao meu portfólio atual com Next.js, Tailwind e IA Generativa.
 
