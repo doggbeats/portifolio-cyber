@@ -15,14 +15,13 @@ const Hero = () => {
     <div className="space-y-8">
       <h1 className="text-4xl md:text-8xl font-bold leading-[1.05] tracking-tight hover:text-[#a5c9ff]">
         Paulo <br />
-        <span className="text-[#a5c9ff] hover:text-white">Henrique</span>
+        <span className="text-[#a5c9ff]">Henrique</span>
       </h1>
 
       <p className="text-gray-400 text-xl max-w-md leading-relaxed transition-colors hover:text-white">
-        Tecnologia da Informação | Segurança & Monitoramento | Automação com Python | Análise de Dados
+  Desenvolvedor Web com foco em Segurança da Informação, Monitoramento, Automação com Python e Análise de Dados
       </p>
-
-      {/* Ícones sociais */}
+       {/* Ícones sociais */}
       <div className="flex items-center gap-5">
         <a href="https://github.com/doggbeats" target="_blank" className="text-gray-400 hover:text-white transition">
           <Github size={22} />
