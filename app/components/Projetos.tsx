@@ -11,8 +11,14 @@ const projetos = [
   {
     titulo: "Analise de Dados com Python usando pandas",
     descricao: "Análise de dados usando a biblioteca pandas e matplotlib.pyplot, obejtivo é analisar quantidade de mortes por estados.",
-    imagemSrc: "/images/analise-dados.png", // coloque a imagem em public/images
+    imagemSrc: "/images/analise-dados.png", 
     link: "https://colab.research.google.com/drive/1ZC-sOWrHexxQo2fCOyz-gWwK236iXhuP",
+  },
+  {
+    titulo: "Verificador de Links com Análise de Segurança",
+    descricao: "Aplicação desenvolvida para analisar URLs e identificar possíveis riscos de segurança, ajudando usuários a verificar links suspeitos antes de acessá-los. O projeto utiliza integração com APIs de segurança, análise de padrões de URLs e validações para identificar possíveis ameaças como phishing, golpes e sites maliciosos.",
+    imagemSrc: "/videos/verificar-links.mp4",
+    link: "https://verificar-links.vercel.app/",
   },
 ];
 
