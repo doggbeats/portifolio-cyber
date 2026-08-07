@@ -35,7 +35,7 @@ export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, li
           rel="noopener noreferrer"
           className="mt-3 inline-block text-sm font-semibold text-[#a5c9ff] hover:underline"
         >
-          Ver no Colab
+          Ver Projeto
         </a>
       )}
     </div>

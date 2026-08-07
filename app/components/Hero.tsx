@@ -37,9 +37,15 @@ const Hero = () => {
 
     {/* Lado direito: Foto */}
     <div className="flex justify-center -mt-12">
-      <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#a5c9ff] hover:border-white transition-colors duration-300">
-        <Image src="/minha-foto.png" alt="Minha Foto" fill className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
+      <div className="relative">
+        {/* Anel de brilho atrás da foto */}
+        <div className="absolute inset-0 -m-4 rounded-full bg-[#a5c9ff]/20 blur-3xl" />
+        <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-[#a5c9ff] via-white/30 to-[#a5c9ff] blur-sm opacity-60" />
+
+        <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-[#a5c9ff] shadow-[0_0_40px_rgba(165,201,255,0.4)] hover:border-white hover:shadow-[0_0_60px_rgba(165,201,255,0.7)] transition-all duration-500">
+          <Image src="/minha-foto.png" alt="Paulo Henrique" fill priority className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40" />
+        </div>
       </div>
     </div>
   </div>

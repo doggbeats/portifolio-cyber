@@ -16,8 +16,8 @@ const projetos = [
   },
   {
     titulo: "Verificador de Links com Análise de Segurança",
-    descricao: "Aplicação desenvolvida para analisar URLs e identificar possíveis riscos de segurança, ajudando usuários a verificar links suspeitos antes de acessá-los. O projeto utiliza integração com APIs de segurança, análise de padrões de URLs e validações para identificar possíveis ameaças como phishing, golpes e sites maliciosos.",
-    imagemSrc: "/videos/verificar-links.mp4",
+    descricao: "Aplicação para análise de URLs e identificação de possíveis ameaças, como phishing e sites maliciosos. Desenvolvida com Python, FastAPI, Next.js, Tailwind CSS e Google Safe Browsing API.",
+    imagemSrc: "/images/verificar_links.png",
     link: "https://verificar-links.vercel.app/",
   },
 ];
