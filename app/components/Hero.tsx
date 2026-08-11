@@ -18,18 +18,18 @@ const Hero = () => {
         <span className="text-[#a5c9ff]">Henrique</span>
       </h1>
 
-      <p className="text-gray-400 text-xl max-w-md leading-relaxed transition-colors hover:text-white">
-  Desenvolvedor Web com foco em Segurança da Informação, Monitoramento, Automação com Python e Análise de Dados
+      <p className="text-white text-xl max-w-md leading-relaxed transition-colors hover:text-white">
+Desenvolvedor Web focado em aplicações modernas, integração de APIs e soluções com Next.js, React, TypeScript, Python e SQL, utilizando IA Generativa como apoio ao desenvolvimento.
       </p>
        {/* Ícones sociais */}
       <div className="flex items-center gap-5">
-        <a href="https://github.com/doggbeats" target="_blank" className="text-gray-400 hover:text-white transition">
+        <a href="https://github.com/doggbeats" target="_blank" className="text-white hover:text-white transition">
           <Github size={22} />
         </a>
-        <a href="https://www.linkedin.com/in/paulo-heenrique1990/" target="_blank" className="text-gray-400 hover:text-[#0077b5] transition">
+        <a href="https://www.linkedin.com/in/paulo-heenrique1990/" target="_blank" className="text-white hover:text-[#0077b5] transition">
           <Linkedin size={22} />
         </a>
-        <a href="https://wa.me/55SEUNUMERO" target="_blank" className="text-gray-400 hover:text-[#25d366] transition">
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" className="text-white hover:text-[#25d366] transition">
           <MessageCircle size={22} />
         </a>
       </div>
@@ -58,3 +58,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

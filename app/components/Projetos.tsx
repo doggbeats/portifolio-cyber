@@ -19,6 +19,14 @@ const projetos = [
     descricao: "Aplicação para análise de URLs e identificação de possíveis ameaças, como phishing e sites maliciosos. Desenvolvida com Python, FastAPI, Next.js, Tailwind CSS e Google Safe Browsing API.",
     imagemSrc: "/images/verificar_links.png",
     link: "https://verificar-links.vercel.app/",
+    
+  },
+  {
+    titulo: "E-commerce VIZION Store",
+    descricao: "Aplicação de e-commerce de moda masculina desenvolvida com Next.js, React, TypeScript e Tailwind CSS, com catálogo de produtos, categorias, navegação responsiva e integração com Git/GitHub.",
+    imagemSrc: "/images/loja-vizion.png",
+    link: "https://vizion-leads.vercel.app/"
+    
   },
 ];
 

@@ -22,21 +22,25 @@ const Servicos = () => {
 
         {/* Coluna da Direita: Texto de Introdução */}
         <div className="lg:col-span-8 space-y-6">
-  <h2 className="text-4xl font-semibold leading-tight">
-    Sobre Mim
-  </h2>
-  <p className="text-gray-400">
-    Olá! Meu nome é Paulo Henrique, sou profissional de tecnologia com foco em Segurança da Informação, análise de dados e automação com Python.
-  </p>
-  <p className="text-gray-400">
-    Ao longo da minha trajetória, trabalhei com monitoramento de sistemas, análise de logs e suporte técnico, sempre buscando soluções eficientes e inovadoras.
-  </p>
-  <p className="text-gray-400">
-    Atualmente, estou criando projetos que unem tecnologia, dados e proteção de sistemas, explorando ferramentas modernas como Python, Next.js e ambientes de Cloud.
-  </p>
-  <p className="text-gray-400">
-    Meu objetivo é transformar conhecimento em resultados reais, mantendo alto padrão de segurança e qualidade em cada projeto que desenvolvo.
-  </p>
+ <h2 className="text-4xl font-semibold leading-tight">
+  Sobre Mim
+</h2>
+
+<p className="text-white">
+  Olá! Meu nome é Paulo Henrique, sou profissional de tecnologia com foco em Desenvolvimento Web e criação de aplicações modernas.
+</p>
+
+<p className="text-white">
+  Tenho experiência com Next.js, React, TypeScript, JavaScript, Tailwind CSS, Python, SQL e integração de APIs, além de Git/GitHub e deploy em produção.
+</p>
+
+<p className="text-white">
+  Também utilizo IA Generativa e ferramentas como OpenCode como apoio ao desenvolvimento, debugging, otimização de código e aprendizado contínuo.
+</p>
+
+<p className="text-white">
+  Minha experiência em NOC contribui para uma visão estruturada de troubleshooting, análise de logs e resolução de problemas. Busco transformar conhecimento em aplicações funcionais, responsivas e de qualidade.
+</p>
 </div>
 
 
@@ -46,3 +50,4 @@ const Servicos = () => {
 };
 
 export default Servicos;
+

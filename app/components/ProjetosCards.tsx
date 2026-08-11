@@ -26,7 +26,7 @@ export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, li
         />
       )}
 
-      <p className="mt-4 text-zinc-400">{descricao}</p>
+      <p className="mt-4 text-white">{descricao}</p>
 
       {link && (
         <a
@@ -41,3 +41,4 @@ export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, li
     </div>
   );
 }
+
