@@ -16,4 +16,52 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "fwid";
+  font-variant-east-asian: full-width;
 }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(80px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-down {
+  from { opacity: 0; transform: translateY(-80px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-left {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-right {
+  from { opacity: 0; transform: translateX(80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-up    { animation: fade-up 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-down  { animation: fade-down 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-left  { animation: fade-left 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-right { animation: fade-right 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-in    { animation: fade-in 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-scale-in   { animation: scale-in 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+.delay-100 { animation-delay: 200ms; }
+.delay-200 { animation-delay: 400ms; }
+.delay-300 { animation-delay: 600ms; }
+.delay-400 { animation-delay: 800ms; }
+.delay-500 { animation-delay: 1000ms; }
+.delay-600 { animation-delay: 1200ms; }
+.delay-700 { animation-delay: 1400ms; }
+.delay-800 { animation-delay: 1600ms; }

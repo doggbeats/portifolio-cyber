@@ -1,5 +1,6 @@
 // FERRAMENTAS QUE UTILIZO
 import { Code, Database, GitBranch, Zap, BarChart2 } from 'lucide-react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const tools = [
   { name: 'Next.js', icon: <Zap size={24} />, level: 80, description: 'Desenvolvimento de aplicações web modernas' },
@@ -21,32 +22,34 @@ const tools = [
 const Ferramentas = () => {
   return (
     <section id='Processo' className="py-24 border-t border-white/10">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-semibold text-white">Ferramentas que utilizo</h2>
-        <p className="text-white mt-2">Experiência prática nas tecnologias que aplico em projetos de dados e automação</p>
-      </div>
+      <AnimateOnScroll animation="fade-up">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-semibold text-white">Ferramentas que utilizo</h2>
+          <p className="text-white mt-2">Experiência prática nas tecnologias que aplico em projetos de dados e automação</p>
+        </div>
+      </AnimateOnScroll>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {tools.map((tool, index) => (
-          <div
-            key={index}
-            className="bg-[#151515] p-6 rounded-2xl flex flex-col gap-4 hover:scale-[1.03] transition-transform duration-300"
-          >
-            <div className="flex items-center gap-3">
-              <div className="text-[#a5c9ff]">{tool.icon}</div>
-              <h3 className="text-xl font-semibold text-white">{tool.name}</h3>
-            </div>
-            <p className="text-white text-sm">{tool.description}</p>
+          <AnimateOnScroll key={index} animation="fade-up" delay={Math.min(index * 100, 700)}>
+            <div
+              className="bg-[#151515] p-6 rounded-2xl flex flex-col gap-4 hover:scale-[1.03] transition-transform duration-300"
+            >
+              <div className="flex items-center gap-3">
+                <div className="text-[#a5c9ff]">{tool.icon}</div>
+                <h3 className="text-xl font-semibold text-white">{tool.name}</h3>
+              </div>
+              <p className="text-white text-sm">{tool.description}</p>
 
-            {/* Barra de proficiência */}
-            <div className="w-full bg-white/10 h-2 rounded-full overflow-hidden mt-2">
-              <div
-                className="h-2 bg-[#a5c9ff] rounded-full transition-all duration-1000"
-                style={{ width: `${tool.level}%` }}
-              />
+              <div className="w-full bg-white/10 h-2 rounded-full overflow-hidden mt-2">
+                <div
+                  className="h-2 bg-[#a5c9ff] rounded-full transition-all duration-1000"
+                  style={{ width: `${tool.level}%` }}
+                />
+              </div>
+              <span className="text-white text-xs mt-1">{tool.level}%</span>
             </div>
-            <span className="text-white text-xs mt-1">{tool.level}%</span>
-          </div>
+          </AnimateOnScroll>
         ))}
       </div>
     </section>
@@ -54,4 +57,3 @@ const Ferramentas = () => {
 };
 
 export default Ferramentas;
-
