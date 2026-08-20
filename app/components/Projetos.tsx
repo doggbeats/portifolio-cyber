@@ -2,7 +2,16 @@
 import ProjetoCard from "./ProjetosCards";
 import AnimateOnScroll from "./AnimateOnScroll";
 
-const projetos = [
+interface Projeto {
+  titulo: string;
+  descricao: string;
+  videoSrc?: string;
+  imagemSrc?: string;
+  posterSrc?: string;
+  link: string;
+}
+
+const projetos: Projeto[] = [
   {
     titulo: "Analisador de Logs com Python",
     descricao: "Criei um pequeno projeto em Python para simular o monitoramento de logs em sistemas críticos. O objetivo era entender como eventos de sistemas reais geram alertas e praticar automação de tarefas..",
@@ -32,6 +41,12 @@ const projetos = [
     descricao: "Aplicação para gestão de processos de recrutamento e análise de candidatos, desenvolvida com Next.js, React, TypeScript e Tailwind CSS.",
     imagemSrc: "/images/recrutaana.jpeg",
     link: "https://anapaularh.vercel.app/"
+  },
+  {
+   titulo: "Landing Page recruta RH",
+    descricao: "RECRUTA RH | Conectando talentos às melhores oportunidades!",
+    videoSrc: "/videos/recruta1.mp4",
+    link: "https://recrutarh.vercel.app/"
   },
 ];
 

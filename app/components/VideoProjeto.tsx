@@ -10,6 +10,8 @@ export default function VideoProjeto({ src, poster }: VideoProjetoProps) {
       src={src}
       poster={poster}
       controls
+      preload="metadata"
+      playsInline
       className="rounded-lg w-full h-auto"
       autoPlay={false}
       loop
