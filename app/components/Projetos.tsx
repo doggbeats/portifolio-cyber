@@ -36,7 +36,7 @@ const projetos = [
   {
     titulo: "Landing Page recruta RH",
     descricao: "RECRUTA RH | Conectando talentos às melhores oportunidades!",
-    imagemSrc: "/images/recrutaana.mp4",
+    imagemSrc: "/videos/recrutaana.mp4",
     link: "https://recrutarh.vercel.app/"
   },
 ];
