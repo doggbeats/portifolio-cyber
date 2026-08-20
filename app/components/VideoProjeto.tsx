@@ -1,15 +1,17 @@
 // app/components/VideoProjeto.tsx
 interface VideoProjetoProps {
   src: string;
+  poster?: string;
 }
 
-export default function VideoProjeto({ src }: VideoProjetoProps) {
+export default function VideoProjeto({ src, poster }: VideoProjetoProps) {
   return (
     <video
-      src={src}          // aqui você passa apenas a prop
-      controls           // adiciona controles de play/pause
+      src={src}
+      poster={poster}
+      controls
       className="rounded-lg w-full h-auto"
-      autoPlay={false}   // false para não iniciar sozinho
+      autoPlay={false}
       loop
       muted
     >

@@ -33,12 +33,6 @@ const projetos = [
     imagemSrc: "/images/recrutaana.jpeg",
     link: "https://anapaularh.vercel.app/"
   },
-  {
-    titulo: "Landing Page recruta RH",
-    descricao: "RECRUTA RH | Conectando talentos às melhores oportunidades!",
-    imagemSrc: "/videos/recrutaana.mp4",
-    link: "https://recrutarh.vercel.app/"
-  },
 ];
 
 export default function Projetos() {
@@ -51,6 +45,7 @@ export default function Projetos() {
             descricao={proj.descricao}
             videoSrc={proj.videoSrc}
             imagemSrc={proj.imagemSrc}
+            posterSrc={proj.posterSrc}
             link={proj.link}
           />
         </AnimateOnScroll>

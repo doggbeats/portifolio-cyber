@@ -6,16 +6,16 @@ interface ProjetoCardProps {
   descricao: string;
   videoSrc?: string;
   imagemSrc?: string;
+  posterSrc?: string;
   link?: string;
 }
 
-export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, link }: ProjetoCardProps) {
+export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, posterSrc, link }: ProjetoCardProps) {
   return (
     <div className="bg-black/30 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
       <h3 className="text-xl font-bold mb-4">{titulo}</h3>
 
-      {/* Mostra vídeo ou imagem dependendo do que tiver */}
-      {videoSrc && <VideoProjeto src={videoSrc} />}
+      {videoSrc && <VideoProjeto src={videoSrc} poster={posterSrc} />}
       {imagemSrc && (
         <Image
           src={imagemSrc}
