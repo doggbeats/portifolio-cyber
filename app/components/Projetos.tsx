@@ -32,7 +32,7 @@ const projetos: Projeto[] = [
   },
   {
     titulo: "E-commerce VIZION Store",
-    descricao: "Aplicação de e-commerce de moda masculina desenvolvida com Next.js, React, TypeScript e Tailwind CSS, com catálogo de produtos, categorias, navegação responsiva e integração com Git/GitHub.",
+    descricao: "E-commerce de moda masculina desenvolvido com Next.js, React, TypeScript e Tailwind CSS, com catálogo, categorias, navegação responsiva, painel administrativo e dashboard para gerenciamento de clientes, pedidos, compras e estoque.",
     imagemSrc: "/images/loja-vizion.png",
     link: "https://vizion-leads.vercel.app/"
   },
