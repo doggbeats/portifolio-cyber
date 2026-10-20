@@ -48,6 +48,18 @@ const projetos: Projeto[] = [
     videoSrc: "/videos/recruta1.mp4",
     link: "https://recrutarh.vercel.app/"
   },
+    {
+   titulo: "Buffet sr e sra gourmet",
+    descricao: "Sr e Sra Gourmet | Buffet de alta gastronomia, especializado em eventos corporativos e sociais.",
+    imagemSrc: "/images/Gourmet.jpg",
+    link: "https://sresragourmet.vercel.app/"
+  },
+    {
+   titulo: "CODE_PH - Assistencia Técnica e Suporte em Informática",
+    descricao: "CODE_PH | Assistência técnica e suporte em informática, com foco em soluções eficientes e confiáveis.",
+    imagemSrc: "/images/Code_ph_assistencia.jpg",
+    link: "https://asssistenciaph.vercel.app/"
+  },
 ];
 
 export default function Projetos() {

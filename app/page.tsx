@@ -1,9 +1,10 @@
-import Navbar from './components/Navbar'; // Importar só uma vez
 import Hero from './components/Hero';
 import Servicos from './components/Servicos';
 import Processo from './components/Processo';
 import Projetos from './components/Projetos';
+import Experiencia from './components/Experiencia';
 import Contact from './components/Contact';
+import BackToTop from './components/BackToTop';
 
 export default function Home() {
   return (
@@ -28,10 +29,16 @@ export default function Home() {
           <Projetos />
         </section>
 
+        <section id="experiencia">
+          <Experiencia />
+        </section>
+
         <section id="contact">
           <Contact />
         </section>
       </div>
+
+      <BackToTop />
     </main>
   )
 }

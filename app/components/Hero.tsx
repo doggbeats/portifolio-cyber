@@ -21,8 +21,8 @@ const Hero = () => {
       </AnimateOnScroll>
 
       <AnimateOnScroll animation="fade-up" delay={200} threshold={0.1}>
-        <p className="text-white text-xl max-w-md leading-relaxed transition-colors hover:text-white">
-Desenvolvedor Web focado em aplicações modernas, integração de APIs e soluções com Next.js, React, TypeScript, Python e SQL, utilizando IA Generativa como apoio ao desenvolvimento.
+        <p className="text-white text-xl max-w-md leading-relaxed text-justify transition-colors hover:text-white">
+Olá! Sou Paulo Henrique, atuo na área de tecnologia com experiência em Suporte Técnico, NOC, Monitoramento e Desenvolvimento Web. Tenho interesse em criar soluções eficientes, resolver problemas e transformar necessidades em aplicações modernas e funcionais, sempre buscando aprimorar meus conhecimentos e acompanhar a evolução da tecnologia.
         </p>
       </AnimateOnScroll>
 

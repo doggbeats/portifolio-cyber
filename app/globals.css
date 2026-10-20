@@ -50,18 +50,18 @@ body {
   to   { opacity: 1; transform: scale(1); }
 }
 
-.animate-fade-up    { animation: fade-up 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.animate-fade-down  { animation: fade-down 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.animate-fade-left  { animation: fade-left 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.animate-fade-right { animation: fade-right 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.animate-fade-in    { animation: fade-in 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
-.animate-scale-in   { animation: scale-in 1.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-up    { animation: fade-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-down  { animation: fade-down 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-left  { animation: fade-left 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-right { animation: fade-right 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-in    { animation: fade-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-scale-in   { animation: scale-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
 
-.delay-100 { animation-delay: 200ms; }
-.delay-200 { animation-delay: 400ms; }
-.delay-300 { animation-delay: 600ms; }
-.delay-400 { animation-delay: 800ms; }
-.delay-500 { animation-delay: 1000ms; }
-.delay-600 { animation-delay: 1200ms; }
-.delay-700 { animation-delay: 1400ms; }
-.delay-800 { animation-delay: 1600ms; }
+.delay-100 { animation-delay: 30ms; }
+.delay-200 { animation-delay: 60ms; }
+.delay-300 { animation-delay: 90ms; }
+.delay-400 { animation-delay: 120ms; }
+.delay-500 { animation-delay: 150ms; }
+.delay-600 { animation-delay: 180ms; }
+.delay-700 { animation-delay: 210ms; }
+.delay-800 { animation-delay: 240ms; }

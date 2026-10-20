@@ -28,29 +28,32 @@ const Servicos = () => {
             </h2>
           </AnimateOnScroll>
 
+    
           <AnimateOnScroll animation="fade-right" delay={100}>
             <p className="text-white">
-              Olá! Meu nome é Paulo Henrique, sou profissional de tecnologia com foco em Desenvolvimento Web e criação de aplicações modernas.
+              Sou profissional de TI e atuo na área de tecnologia há mais de 10 anos, com experiência em Suporte Técnico, NOC, Monitoramento e Desenvolvimento Web.
             </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={200}>
             <p className="text-white">
-              Tenho experiência com Next.js, React, TypeScript, JavaScript, Tailwind CSS, Python, SQL e integração de APIs, além de Git/GitHub e deploy em produção.
+              Minha trajetória combina resolução de problemas, análise técnica e desenvolvimento de soluções digitais, buscando sempre entregar resultados eficientes e funcionais.
             </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={300}>
             <p className="text-white">
-              Também utilizo IA Generativa e ferramentas como OpenCode como apoio ao desenvolvimento, debugging, otimização de código e aprendizado contínuo.
+              Utilizo ferramentas de IA Generativa, como ChatGPT, Claude e OpenCode, como apoio ao desenvolvimento, debugging, aprendizado e otimização de soluções.
             </p>
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={400}>
             <p className="text-white">
-              Minha experiência em NOC contribui para uma visão estruturada de troubleshooting, análise de logs e resolução de problemas. Busco transformar conhecimento em aplicações funcionais, responsivas e de qualidade.
+              Estou constantemente aprimorando meus conhecimentos e acompanhando a evolução das tecnologias para transformar desafios em soluções modernas, eficientes e funcionais.
             </p>
           </AnimateOnScroll>
+
+
 </div>
 
 

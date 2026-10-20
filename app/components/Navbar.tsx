@@ -8,15 +8,22 @@ const Navbar = () => {
   const links = [
 
   { label: "Me", href: "#servicos" },
-  { label: "Habilidades", href: "#processo" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Contatos", href: "#contact" },
+  { label: "Skills", href: "#processo" },
+  { label: "Projects", href: "#projetos" },
+  { label: "Experience", href: "#experiencia" },
+  { label: "Contact", href: "#contact" },
   ];
 
   return (
     <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-50">
-      {/* Logo */}
-      <div className="font-bold text-xl">Code_PH</div>
+      {/* Botão Início */}
+      <a
+        href="#me"
+        onClick={() => setIsOpen(false)}
+        className="border border-white/20 px-5 py-2 rounded-full text-sm hover:bg-[#a5c9ff] hover:text-black transition-all duration-300"
+      >
+        Início
+      </a>
 
       {/* Links Desktop */}
       <div className="hidden md:flex gap-8 text-lg">
@@ -53,10 +60,20 @@ const Navbar = () => {
       {/* Menu Lateral Mobile */}
       <div
         className={`fixed top-0 right-0 h-full w-64
-          bg-white/10 backdrop-blur-md flex flex-col items-center gap-6 py-12
-          md:hidden transition-transform duration-[1000ms] ease-in-out
+          bg-white/10 backdrop-blur-md flex flex-col items-center gap-6
+          md:hidden transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
+        <div className="w-full flex items-center justify-end px-4 py-6">
+          <button
+            onClick={() => setIsOpen(false)}
+            aria-label="Fechar menu"
+            className="p-1 hover:text-[#a5c9ff] transition-colors duration-300"
+          >
+            <X size={24} />
+          </button>
+        </div>
+
         {links.map((link) => (
           <a
             key={link.href}
