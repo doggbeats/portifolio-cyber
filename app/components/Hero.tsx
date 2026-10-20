@@ -45,7 +45,7 @@ const Hero = () => {
     </div>
 
     {/* Lado direito: Foto */}
-    <AnimateOnScroll animation="scale-in" delay={300} threshold={0.1} className="flex justify-center -mt-12">
+    <AnimateOnScroll animation="scale-in" delay={300} threshold={0.1} className="hidden lg:flex justify-center -mt-12">
       <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden hover:scale-105 transition-transform duration-500">
         <Image src="/minha-foto1.png" alt="Paulo Henrique" fill priority className="object-contain" />
       </div>
