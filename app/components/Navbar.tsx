@@ -16,15 +16,6 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-50">
-      {/* Botão Início */}
-      <a
-        href="#me"
-        onClick={() => setIsOpen(false)}
-        className="border border-white/20 px-5 py-2 rounded-full text-sm hover:bg-[#a5c9ff] hover:text-black transition-all duration-300"
-      >
-        Início
-      </a>
-
       {/* Links Desktop */}
       <div className="hidden md:flex gap-8 text-lg">
         {links.map((link) => (
@@ -51,7 +42,7 @@ const Navbar = () => {
       </a>
 
       {/* Hamburger Mobile */}
-      <div className="md:hidden">
+      <div className="md:hidden ml-auto">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

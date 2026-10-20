@@ -14,7 +14,7 @@ const Hero = () => {
     {/* Lado esquerdo: Texto */}
     <div className="space-y-8">
       <AnimateOnScroll animation="fade-up" threshold={0.1}>
-        <h1 className="text-4xl md:text-8xl font-bold leading-[1.05] tracking-tight hover:text-[#a5c9ff]">
+        <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold leading-[1.05] tracking-tight hover:text-[#a5c9ff]">
           Paulo <br />
           <span className="text-[#a5c9ff]">Henrique</span>
         </h1>
@@ -22,7 +22,10 @@ const Hero = () => {
 
       <AnimateOnScroll animation="fade-up" delay={200} threshold={0.1}>
         <p className="text-white text-xl max-w-md leading-relaxed text-justify transition-colors hover:text-white">
-Olá! Sou Paulo Henrique, atuo na área de tecnologia com experiência em Suporte Técnico, NOC, Monitoramento e Desenvolvimento Web. Tenho interesse em criar soluções eficientes, resolver problemas e transformar necessidades em aplicações modernas e funcionais, sempre buscando aprimorar meus conhecimentos e acompanhar a evolução da tecnologia.
+          Olá! Sou Paulo Henrique, profissional de Tecnologia da Informação com mais de 12 anos de experiência em Suporte Técnico, NOC e Monitoramento de Sistemas, além de atuação no desenvolvimento web.
+          <br />
+          <br />
+          Meu foco é unir conhecimento técnico, pensamento analítico e tecnologia para criar soluções digitais funcionais, automatizar processos e resolver problemas reais. Estou sempre em busca de novos conhecimentos e oportunidades para desenvolver projetos que conectem inovação, eficiência e resultados.
         </p>
       </AnimateOnScroll>
 
