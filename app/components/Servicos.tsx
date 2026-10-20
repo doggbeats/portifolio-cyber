@@ -10,7 +10,7 @@ const Servicos = () => {
 
         {/* Coluna da Esquerda: Foto maior */}
         <AnimateOnScroll animation="fade-left" className="lg:col-span-4 flex justify-center">
-        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden hidden lg:block hover:scale-105 transition-transform duration-500">
+        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden hover:scale-105 transition-transform duration-500">
           <Image
             src="/minha-foto1.png"
             alt="Minha Foto"
