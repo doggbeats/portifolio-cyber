@@ -12,21 +12,27 @@ interface ProjetoCardProps {
 
 export default function ProjetoCard({ titulo, descricao, videoSrc, imagemSrc, posterSrc, link }: ProjetoCardProps) {
   return (
-    <div className="bg-black/30 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
-      <h3 className="text-xl font-bold mb-4">{titulo}</h3>
+    <div className="flex h-full flex-col bg-black/30 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
+      <h3 className="mb-4 text-xl font-bold line-clamp-2 min-h-[3.5rem]">{titulo}</h3>
 
-      {videoSrc && <VideoProjeto src={videoSrc} poster={posterSrc} />}
+      {videoSrc && (
+        <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <VideoProjeto src={videoSrc} poster={posterSrc} />
+        </div>
+      )}
       {imagemSrc && (
-        <Image
-          src={imagemSrc}
-          alt={titulo}
-          width={500}
-          height={300}
-          className="rounded-lg w-full h-auto object-cover"
-        />
+        <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <Image
+            src={imagemSrc}
+            alt={titulo}
+            width={500}
+            height={300}
+            className="h-full w-full object-cover object-top"
+          />
+        </div>
       )}
 
-      <p className="mt-4 text-white">{descricao}</p>
+      <p className="mt-4 flex-1 text-white line-clamp-4">{descricao}</p>
 
       {link && (
         <a

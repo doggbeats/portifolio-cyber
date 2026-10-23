@@ -15,14 +15,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-50">
+    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-50 animate-fade-down">
       {/* Links Desktop */}
       <div className="hidden md:flex gap-8 text-lg">
-        {links.map((link) => (
+        {links.map((link, index) => (
           <a
             key={link.href}
             href={link.href}
-            className="hover:text-[#a5c9ff] transition-colors duration-300"
+            className="animate-fade-down hover:text-[#a5c9ff] transition-colors duration-300"
+            style={{ animationDelay: `${100 + index * 80}ms` }}
           >
             {link.label}
           </a>
@@ -34,7 +35,8 @@ const Navbar = () => {
         href="/Curriculo_atualizado2026.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden md:block"
+        className="hidden md:block animate-fade-down"
+        style={{ animationDelay: "500ms" }}
       >
         <button className="border border-white/20 px-5 py-2 rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">
           Currículo
@@ -65,11 +67,12 @@ const Navbar = () => {
           </button>
         </div>
 
-        {links.map((link) => (
+        {links.map((link, index) => (
           <a
             key={link.href}
             href={link.href}
-            className="text-white hover:text-[#a5c9ff] transition-colors duration-300 text-xl"
+            className={`text-white hover:text-[#a5c9ff] transition-colors duration-300 text-xl ${isOpen ? "animate-fade-right" : ""}`}
+            style={isOpen ? { animationDelay: `${index * 70}ms` } : undefined}
             onClick={() => setIsOpen(false)} // fecha menu ao clicar
           >
             {link.label}

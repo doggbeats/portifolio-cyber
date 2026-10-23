@@ -12,18 +12,7 @@ interface Projeto {
 }
 
 const projetos: Projeto[] = [
-  {
-    titulo: "Analisador de Logs com Python",
-    descricao: "Criei um pequeno projeto em Python para simular o monitoramento de logs em sistemas críticos. O objetivo era entender como eventos de sistemas reais geram alertas e praticar automação de tarefas..",
-    videoSrc: "/videos/analise-logs.mp4",
-    link: "https://colab.research.google.com/drive/SEU_ID_AQUI",
-  },
-  {
-    titulo: "Analise de Dados com Python usando pandas",
-    descricao: "Análise de dados usando a biblioteca pandas e matplotlib.pyplot, obejtivo é analisar quantidade de mortes por estados.",
-    imagemSrc: "/images/analise-dados.png", 
-    link: "https://colab.research.google.com/drive/1ZC-sOWrHexxQo2fCOyz-gWwK236iXhuP",
-  },
+  
   {
     titulo: "Verificador de Links com Análise de Segurança",
     descricao: "Aplicação para análise de URLs e identificação de possíveis ameaças, como phishing e sites maliciosos. Desenvolvida com Python, FastAPI, Next.js, Tailwind CSS e Google Safe Browsing API.",
@@ -36,18 +25,7 @@ const projetos: Projeto[] = [
     imagemSrc: "/images/loja-vizion.png",
     link: "https://vizion-leads.vercel.app/"
   },
-    {
-    titulo: "Sistema de Recrutamento e Gestão de Vagas",
-    descricao: "Aplicação para gestão de processos de recrutamento e análise de candidatos, desenvolvida com Next.js, React, TypeScript e Tailwind CSS.",
-    imagemSrc: "/images/recrutaana.jpeg",
-    link: "https://anapaularh.vercel.app/"
-  },
-  {
-   titulo: "Landing Page recruta RH",
-    descricao: "RECRUTA RH | Conectando talentos às melhores oportunidades!",
-    videoSrc: "/videos/recruta1.mp4",
-    link: "https://recrutarh.vercel.app/"
-  },
+
     {
    titulo: "Buffet sr e sra gourmet",
     descricao: "Sr e Sra Gourmet | Buffet de alta gastronomia, especializado em eventos corporativos e sociais.",
@@ -60,13 +38,26 @@ const projetos: Projeto[] = [
     imagemSrc: "/images/Code_ph_assistencia.jpg",
     link: "https://asssistenciaph.vercel.app/"
   },
+
+   {
+    titulo: "PDV - sistema de ponto de venda",
+    descricao: "Sistema de ponto de venda desenvolvido com React e Node.js, com funcionalidades para gerenciamento de produtos, vendas e relatórios.",
+    imagemSrc: "/images/pdv.jpg", 
+    link: "https://pdv-vendas-balcao.vercel.app/",
+  },
+  {
+    titulo: "Catalogo de Produto +  finalização via whatsapp",
+    descricao: "Sistema de catálogo de produtos desenvolvido com React e Node.js, com funcionalidades para gerenciamento de produtos, vendas e finalização de pedidos via WhatsApp.",
+    imagemSrc: "/images/catalogo-tenis.jpg", 
+    link: "https://catalago-whatsapp.vercel.app/",
+  },
 ];
 
 export default function Projetos() {
   return (
-    <div id="Projetos" className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div id="Projetos" className="grid auto-rows-fr grid-cols-1 md:grid-cols-3 gap-6">
       {projetos.map((proj, index) => (
-        <AnimateOnScroll key={index} animation="fade-up" delay={Math.min(index * 150, 600)}>
+        <AnimateOnScroll key={index} animation="fade-up" delay={Math.min(index * 150, 600)} className="h-full">
           <ProjetoCard
             titulo={proj.titulo}
             descricao={proj.descricao}

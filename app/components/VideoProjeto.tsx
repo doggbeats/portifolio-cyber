@@ -12,7 +12,7 @@ export default function VideoProjeto({ src, poster }: VideoProjetoProps) {
       controls
       preload="metadata"
       playsInline
-      className="rounded-lg w-full h-auto"
+      className="rounded-lg h-full w-full object-cover"
       autoPlay={false}
       loop
       muted
