@@ -55,7 +55,7 @@ const projetos: Projeto[] = [
 
 export default function Projetos() {
   return (
-    <div id="Projetos" className="grid auto-rows-fr grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid auto-rows-fr grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
       {projetos.map((proj, index) => (
         <AnimateOnScroll key={index} animation="fade-up" delay={Math.min(index * 150, 600)} className="h-full">
           <ProjetoCard

@@ -21,23 +21,23 @@ const tools = [
 
 const Ferramentas = () => {
   return (
-    <section id='Processo' className="py-24 border-t border-white/10">
+    <section className="py-16 md:py-24 border-t border-white/10">
       <AnimateOnScroll animation="fade-up">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold text-white">Ferramentas que utilizo</h2>
-          <p className="text-white mt-2">Experiência prática nas tecnologias que aplico em projetos de dados e automação</p>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-white">Ferramentas que utilizo</h2>
+          <p className="text-white text-sm sm:text-base mt-2 max-w-2xl mx-auto leading-relaxed">Experiência prática nas tecnologias que aplico em projetos de dados e automação</p>
         </div>
       </AnimateOnScroll>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         {tools.map((tool, index) => (
           <AnimateOnScroll key={index} animation="fade-up" delay={Math.min(index * 100, 700)}>
             <div
-              className="bg-[#151515] p-6 rounded-2xl flex flex-col gap-4 hover:scale-[1.03] transition-transform duration-300"
+              className="bg-[#151515] p-5 sm:p-6 rounded-2xl flex flex-col gap-3 sm:gap-4 h-full md:hover:scale-[1.03] transition-transform duration-300"
             >
-              <div className="flex items-center gap-3">
-                <div className="text-[#a5c9ff]">{tool.icon}</div>
-                <h3 className="text-xl font-semibold text-white">{tool.name}</h3>
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="text-[#a5c9ff] shrink-0">{tool.icon}</div>
+                <h3 className="text-lg sm:text-xl font-semibold text-white break-words">{tool.name}</h3>
               </div>
               <p className="text-white text-sm">{tool.description}</p>
 

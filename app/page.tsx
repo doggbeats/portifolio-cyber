@@ -8,11 +8,11 @@ import BackToTop from './components/BackToTop';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center">
+    <main className="min-h-dvh flex flex-col items-center overflow-x-clip">
       {/* Navbar só aqui */}
     
 
-      <div className="w-full max-w-7xl px-6 md:px-12">
+      <div className="w-full max-w-7xl px-4 sm:px-6 md:px-12">
         <section id="me">
           <Hero />
         </section>

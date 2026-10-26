@@ -149,11 +149,11 @@ const roles = [
 
 const Experiencia = () => {
   return (
-    <section className="py-24 border-t border-white/10">
+    <section className="py-16 md:py-24 border-t border-white/10">
       <AnimateOnScroll animation="fade-up">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold text-white">Experience</h2>
-          <p className="text-white mt-2">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-white">Experience</h2>
+          <p className="text-white text-sm sm:text-base mt-2 max-w-2xl mx-auto leading-relaxed">
             Monitoramento, gestão de incidentes e suporte operacional em
             ambientes corporativos críticos
           </p>
@@ -163,22 +163,22 @@ const Experiencia = () => {
       <div className="relative max-w-3xl mx-auto">
         <div className="absolute left-2 top-3 bottom-3 w-px bg-white/10" />
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-8 md:gap-10">
           {roles.map((role, index) => (
             <AnimateOnScroll
               key={role.company}
               animation="fade-up"
               delay={Math.min(index * 150, 450)}
-              className="relative pl-10"
+              className="relative pl-8 sm:pl-10"
             >
               <span className="absolute left-0 top-3 flex h-4 w-4 items-center justify-center rounded-full border border-[#a5c9ff] bg-[#0a0a0a]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#a5c9ff]" />
               </span>
 
-              <article className="rounded-2xl border border-white/10 bg-[#151515] p-6 transition-transform duration-300 hover:scale-[1.01]">
-                <div className="flex flex-wrap items-center gap-3">
+              <article className="rounded-xl sm:rounded-2xl border border-white/10 bg-[#151515] p-4 sm:p-6 transition-transform duration-300 md:hover:scale-[1.01]">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                   <div className="text-[#a5c9ff]">{role.icon}</div>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-base sm:text-xl font-semibold text-white break-words min-w-0">
                     {role.company}
                   </h3>
                   <span className="rounded-full border border-white/15 px-3 py-0.5 text-xs text-white/70">
@@ -191,14 +191,14 @@ const Experiencia = () => {
                   {role.summary}
                 </p>
 
-                <ul className="mt-4 space-y-3">
+                <ul className="mt-4 space-y-2.5 sm:space-y-3">
                   {role.highlights.map((item) => (
-                    <li key={item.label} className="flex gap-3 text-sm">
+                    <li key={item.label} className="flex gap-2.5 sm:gap-3 text-sm">
                       <ShieldCheck
                         size={16}
                         className="mt-1 shrink-0 text-[#a5c9ff]"
                       />
-                      <span>
+                      <span className="min-w-0">
                         <span className="font-semibold text-white">
                           {item.label}:{" "}
                         </span>

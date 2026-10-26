@@ -203,6 +203,10 @@ export default function ChatBot() {
   const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
+    // No mobile o assistente ocupa quase a tela inteira; abrir sozinho
+    // esconde o conteúdo do site. Ele fica disponível pelo botão flutuante.
+    if (!window.matchMedia("(min-width: 768px)").matches) return;
+
     const timer = setTimeout(() => {
       setOpen(true);
       setUnread(false);
@@ -293,9 +297,9 @@ export default function ChatBot() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 pb-[env(safe-area-inset-bottom)]">
       {open && (
-        <div className="w-[calc(100vw-3rem)] max-w-sm h-[min(32rem,calc(100vh-6rem))] bg-[#151515] border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-fade-up font-[Arial,Helvetica,sans-serif]">
+        <div className="w-[calc(100vw-2rem)] sm:w-[calc(100vw-3rem)] max-w-sm h-[min(32rem,calc(100dvh-2rem))] max-h-[calc(100dvh-2rem)] bg-[#151515] border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-fade-up font-[Arial,Helvetica,sans-serif]">
           {/* Cabeçalho */}
           <div className="flex items-center gap-3 px-4 py-3 border-b border-white/10 bg-[#1a1a1a]">
             <div className="relative">
@@ -319,14 +323,14 @@ export default function ChatBot() {
             <button
               onClick={close}
               aria-label="Fechar assistente"
-              className="text-white/50 hover:text-white transition-colors"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-white/50 hover:bg-white/10 hover:text-white transition-colors"
             >
               <X size={18} />
             </button>
           </div>
 
           {/* Conversa */}
-          <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+          <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 space-y-4">
             {messages.length === 0 && (
               <div className="space-y-4">
                 <div className="flex gap-2.5">
@@ -345,7 +349,7 @@ export default function ChatBot() {
                     <button
                       key={suggestion}
                       onClick={() => ask(suggestion)}
-                      className="text-left text-xs text-white/80 border border-white/15 hover:border-[#a5c9ff]/60 hover:text-[#a5c9ff] rounded-full px-3 py-1.5 transition-colors"
+                      className="text-left text-xs text-white/80 border border-white/15 hover:border-[#a5c9ff]/60 hover:text-[#a5c9ff] rounded-full px-3 py-2 transition-colors"
                     >
                       {suggestion}
                     </button>
@@ -460,13 +464,13 @@ export default function ChatBot() {
               placeholder="Pergunte sobre skills, projetos, experiência..."
               maxLength={500}
               disabled={loading}
-              className="flex-1 bg-transparent text-sm text-white placeholder:text-white/35 outline-none disabled:opacity-50"
+              className="flex-1 min-w-0 bg-transparent text-base sm:text-sm text-white placeholder:text-white/35 outline-none disabled:opacity-50"
             />
             <button
               type="submit"
               disabled={loading || !input.trim()}
               aria-label="Enviar pergunta"
-              className="w-9 h-9 rounded-full bg-[#a5c9ff] text-black flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition-opacity"
+              className="w-10 h-10 rounded-full bg-[#a5c9ff] text-black flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed transition-opacity shrink-0"
             >
               {loading ? (
                 <Loader2 size={16} className="animate-spin" />

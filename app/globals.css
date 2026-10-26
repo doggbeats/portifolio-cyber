@@ -18,6 +18,31 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-feature-settings: "fwid";
   font-variant-east-asian: full-width;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+ * No mobile, deslocamentos de 80px nas animações saíam da tela e criavam
+ * rolagem horizontal. Uma entrada mais curta mantém o efeito sem estourar
+ * a largura do aparelho.
+ */
+@media (max-width: 767px) {
+  @keyframes fade-left {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes fade-right {
+    from { opacity: 0; transform: translateX(24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
 }
 
 @keyframes fade-up {

@@ -20,7 +20,7 @@ export default function FundoAnimado() {
   return (
   <Particles
     id="tsparticles"
-    className="fixed top-0 left-0 w-screen h-screen -z-10"
+    className="pointer-events-none fixed inset-0 -z-10"
     style={{ position: "fixed" }}
     options={{
       fullScreen: {
@@ -68,6 +68,19 @@ export default function FundoAnimado() {
         shape: { type: "circle" },
         size: { value: { min: 1, max: 3 } },
       },
+      responsive: [
+        {
+          maxWidth: 768,
+          options: {
+            fpsLimit: 30,
+            particles: {
+              number: { value: 40 },
+              links: { distance: 110 },
+              move: { speed: 0.6 },
+            },
+          },
+        },
+      ],
       detectRetina: true,
     }}
   />
